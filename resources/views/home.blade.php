@@ -16,18 +16,34 @@
     </style>
 
     <style>
+        :root {
+            --bg-voilet: #c8f7ff00;
+            --red-primary: #ffa1cb00;
+            --gray-primary: #dce2ef;
+        }
         body {
             font-family: 'Nunito', sans-serif;
+        }
+        .content-image{
+            width: 100%;
+            height: 100%;
+        }
+        .navbar{
+            background-color: #c8f7ff;
         }
     </style>
 </head>
 <body class="antialiased">
     <div class="container-fluid">
-        <div class="row navbar"></div>
+        <div class="row navbar">
+            <div class="col-12">
+                <img src="{{url('images/my-way.jpg')}}" width="50" height="50" alt="">
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-6"></div>
             <div class="col-lg-6">
-                <img src="" alt="">
+                <img src="{{url('images/my-way.jpg')}}" class="content-image" alt="">
             </div>
         </div>
     </div>
