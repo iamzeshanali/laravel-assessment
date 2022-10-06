@@ -24,12 +24,19 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
+        .container-fluid{
+            padding: 0;
+        }
         .content-image{
             width: 100%;
             height: 100%;
         }
         .navbar{
             background-color: #c8f7ff;
+            background: linear-gradient(to right, rgba(1, 254, 228, 0) 0%, rgba(1, 254, 228, 1) 20%, rgba(1, 254, 228, 1) 80%, rgba(1, 254, 228, 0) 100%);
+        }
+        .left-section{
+            background-color: #dce2ef;
         }
     </style>
 </head>
@@ -41,7 +48,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6 left-section"></div>
             <div class="col-lg-6">
                 <img src="{{url('images/my-way.jpg')}}" class="content-image" alt="">
             </div>
